@@ -56,57 +56,82 @@
 
     <!-- Pavel -->
 
-    <main class="container-md">
+    <main class="container-md" id="main-content">
       <div class="row">
         <div class="col-4 border border-2 rounded-start p-3">
-          <div class="list-group">
-            <a href="#" class="list-group-item list-group-item-action active">
+          <div class="list-group" id="recipe-list">
+            <a
+              href="#main-content"
+              class="list-group-item list-group-item-action active"
+              data-name="chocolate cookies"
+            >
               Chocolate Cookies
             </a>
-            <a href="#" class="list-group-item list-group-item-action"
-              >Vanilla Cake</a
+            <a
+              href="#main-content"
+              class="list-group-item list-group-item-action"
+              data-name="vanilla cake"
             >
-            <a href="#" class="list-group-item list-group-item-action">
+              Vanilla Cake
+            </a>
+            <a
+              href="#main-content"
+              class="list-group-item list-group-item-action"
+              data-name="strawberry cake"
+            >
               Strawberry Cake
             </a>
-            <a href="#" class="list-group-item list-group-item-action">
-              Carrott Cake
+            <a
+              href="#main-content"
+              class="list-group-item list-group-item-action"
+              data-name="carrot cake"
+            >
+              Carrot Cake
             </a>
-            <a href="#" class="list-group-item list-group-item-action">
+            <a
+              href="#main-content"
+              class="list-group-item list-group-item-action"
+              data-name="orange cake"
+            >
               Orange Cake
             </a>
           </div>
         </div>
         <div class="col-8 border border-2 rounded-end p-3">
           <figure class="figure border p-2 rounded">
-            <h2>Chocolate Cookies</h2>
+            <h2 id="recipe-header">Chocolate Cookies</h2>
             <div class="image">
               <img
                 src="https://images.unsplash.com/photo-1558961363-fa8fdf82db35?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=765&q=80"
                 class="image"
                 alt="food pic"
+                id="recipe-picture"
               />
               <div class="image__overlay">
-                <div class="image__title">Chocolate Cookies</div>
+                <div class="image__title" id="recipe-title">
+                  Chocolate Cookies
+                </div>
                 <p class="image__description">SO... now you see the title</p>
               </div>
             </div>
-            <figcaption class="figure-caption text-start">
+            <figcaption class="figure-caption text-start" id="recipe-title2">
               Chocolate Cookies
             </figcaption>
           </figure>
-          <p>
-            These cookies are soft, chewy and golden like a good chocolate chip
-            cookie should be. If you’ve tried making gluten-free chocolate chip
-            cookies before you probably know they can turn out dry, grainy and
-            pale.
-          </p>
-          <p>
-            The first secret ingredient is brown butter. Sometimes gluten-free
-            cookies can lack a depth of flavor. Brown butter gives these cookies
-            a delectable nutty, toasty almost caramelized flavor that you can’t
-            get from anything else.
-          </p>
+          <div id="recipe-description">
+            <p>
+              These cookies are soft, chewy and golden like a good chocolate
+              chip cookie should be. If you’ve tried making gluten-free
+              chocolate chip cookies before you probably know they can turn out
+              dry, grainy and pale.
+            </p>
+            <p>
+              The first secret ingredient is brown butter. Sometimes gluten-free
+              cookies can lack a depth of flavor. Brown butter gives these
+              cookies a delectable nutty, toasty almost caramelized flavor that
+              you can’t get from anything else.
+            </p>
+          </div>
           <table class="table table-striped border table-hover shadow">
             <thead>
               <tr>
@@ -114,7 +139,7 @@
                 <th scope="col">Amount</th>
               </tr>
             </thead>
-            <tbody>
+            <tbody id="recipe-ingredients">
               <tr>
                 <td>Butter</td>
                 <td>1/2 cup</td>
